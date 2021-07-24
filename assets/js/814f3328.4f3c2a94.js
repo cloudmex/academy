@@ -1,1 +1,0 @@
-(self.webpackChunkcloudmex_academy=self.webpackChunkcloudmex_academy||[]).push([[535],{6353:function(e){"use strict";e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Welcome","permalink":"/academy/blog/welcome"},{"title":"Hello","permalink":"/academy/blog/hello-world"},{"title":"Hola","permalink":"/academy/blog/hola"}]}')}}]);

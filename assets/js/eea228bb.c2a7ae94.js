@@ -1,1 +1,0 @@
-(self.webpackChunkcloudmex_academy=self.webpackChunkcloudmex_academy||[]).push([[666],{717:function(a){"use strict";a.exports=JSON.parse('{"allTagsPath":"/academy/blog/tags","slug":"docusaurus","name":"docusaurus","count":3,"permalink":"/academy/blog/tags/docusaurus"}')}}]);
