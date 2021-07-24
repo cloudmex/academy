@@ -1,0 +1,1 @@
+(self.webpackChunkcloudmex_academy=self.webpackChunkcloudmex_academy||[]).push([[601],{2238:function(a){"use strict";a.exports=JSON.parse('{"allTagsPath":"/academy/blog/tags","slug":"facebook","name":"facebook","count":1,"permalink":"/academy/blog/tags/facebook"}')}}]);
