@@ -4,32 +4,12 @@ sidebar_position: 1
 
 # CloudMex Academy
 
-Let's discover **Docusaurus in less than 5 minutes**.
+CloudMex Analytics decided to create its own **academy** as a way to train new developers in the most updated technologies. CloudMex Academy its an open community for everyone that wants to improve their software development skills and become a professional in IT.
 
-## Getting Started
+In the other hand we do periodical recruitment rounds for our organization and look into the best students of the Academy for picking new developers. 
 
-Get started by **creating a new site**.
+## Our trainings
 
-Or **try Docusaurus immediately** with **[new.docusaurus.io](https://new.docusaurus.io)**.
+### 1 Web Fundamentals Development
 
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**:
-
-```shell
-npx @docusaurus/init@latest init my-website classic
-```
-
-## Start your site
-
-Run the development server:
-
-```shell
-cd my-website
-
-npx docusaurus start
-```
-
-Your site starts at `http://localhost:3000`.
-
-Open `docs/intro.md` and edit some lines: the site **reloads automatically** and display your changes.
+Web Fundamentals Developments is a full week training, where you will be guided by professional in tech instructors. You will learn the MERN Stack for web application development focused in obtain a functional web app running in a production server.
