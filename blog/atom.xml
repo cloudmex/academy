@@ -6,12 +6,12 @@
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://academy.cloudmex.io/blog"/>
     <subtitle>CloudMex Academy Blog</subtitle>
-    <icon>https://academy.cloudmex.io/img/favicon.ico</icon>
+    <icon>https://academy.cloudmex.io/img/cloudmex-logo.png</icon>
     <entry>
-        <title type="html"><![CDATA[Hola]]></title>
-        <id>hola</id>
-        <link href="https://academy.cloudmex.io/blog/hola"/>
+        <title type="html"><![CDATA[Web Fundamentals Development (WFD) Bootcamp – Recruitment training, august 2021.]]></title>
+        <id>wfd-august-2021</id>
+        <link href="https://academy.cloudmex.io/blog/wfd-august-2021"/>
         <updated>2021-07-31T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultr---]]></summary>
+        <summary type="html"><![CDATA[In CloudMex Analytics, we are looking for talented people who want to learn how to develop web based applications for the professional world and start their career in software development. WFD is a full week training, where you will be guided by professional in tech instructors.]]></summary>
     </entry>
 </feed>
