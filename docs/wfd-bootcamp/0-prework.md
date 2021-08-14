@@ -1,8 +1,8 @@
 ---
-sidebar_position: 1
+sidebar_position: 0
 ---
 
-# Create a Page
+# Day 0 - Pre work
 
 Add **Markdown or React** files to `src/pages` to create a **standalone page**:
 
