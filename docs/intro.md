@@ -10,6 +10,6 @@ In the other hand we do periodical recruitment rounds for our organization and l
 
 ## Our trainings
 
-### 1 Web Fundamentals Development
+### 1 - Web Fundamentals Development
 
 Web Fundamentals Developments is a full week training, where you will be guided by professional in tech instructors. You will learn the MERN Stack for web application development focused in obtain a functional web app running in a production server.
