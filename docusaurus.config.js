@@ -9,7 +9,7 @@ module.exports = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/cloudmex-logo.png',
   organizationName: 'cloudmex', // Usually your GitHub org/user name.
   projectName: 'academy', // Usually your repo name.
   themeConfig: {

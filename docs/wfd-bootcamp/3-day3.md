@@ -11,12 +11,14 @@ _The next instructions contains the  neceseary steps to create a basic react app
 
 In your work folder open a new bash or command prompt and paste the next code.
 
+
 ```
 npx create-react-app hello-cloudmex
 ```
 And then you should be able to see the next message:
 ```
 We suggest that you begin by typing:
+
 
   cd hello-cloudmex
   yarn start
