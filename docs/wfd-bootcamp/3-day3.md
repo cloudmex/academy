@@ -11,14 +11,12 @@ _The next instructions contains the  neceseary steps to create a basic react app
 
 In your work folder open a new bash or command prompt and paste the next code.
 
-
 ```
 npx create-react-app hello-cloudmex
 ```
 And then you should be able to see the next message:
 ```
 We suggest that you begin by typing:
-
 
   cd hello-cloudmex
   yarn start
@@ -34,6 +32,53 @@ npm run start
 > To see the official documentation go to [React.org](https://es.reactjs.org/docs/create-a-new-react-app.html)
 
 
+
+# Creating the navigation 🔧
+
+_In this tutorial we'll use React.Router ._
+
+### Open the bash or the command prompt in the root folder and run the next command that will install a new dependendcy in your proyect.
+
+```
+cd router-tutorial
+npm install react-router-dom@6
+```
+ This copies the appropriate React Router files and registers it in our package.json. 
+
+###  Now open the App.js file and add the import for react-router
+ 
+ ```
+export default function App() {
+  return (
+    <div>
+      <h1>Bookkeeper!</h1>
+    </div>
+  );
+}
+```
+
+
+### Next, we can see something like this in the index.js:
+
+```
+mport { render } from "react-dom";
+import App from "./App";
+
+const rootElement = document.getElementById("root");
+render(<App />, rootElement);
+```
+
+### Now to continue yo need to follow the next guide:
+[reactrouter.com](https://reactrouter.com/docs/en/v6/getting-started/tutorial#connect-the-url)
+### You will need to do this:
+
+- **Connect the URL**
+- **Add Some Links**
+- **Add Some Routes**
+- **Nested Routes**
+
+**And now you’re finished!** Now when you run **npm run start**
+
 # Setting up Tailwind with react 🔧
 
 _Tailwind CSS requires Node.js 12.13.0 or higher._
@@ -41,155 +86,49 @@ _Tailwind CSS requires Node.js 12.13.0 or higher._
 Open the bash or the command prompt in the root folder and run the next command that will install a new dependendcy in your proyect.
 
 ```
-npm install -D tailwindcss@npm:@tailwindcss/postcss7-compat postcss@^7 autoprefixer@^9
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
 ```
-### Install and configure CRACO
- ```
-npm install @craco/craco
-```
-### Next, create a craco.config.js at the root of our project and add the tailwindcss and autoprefixer as PostCSS plugins: 
+### Configure your template paths
 
-```
-// craco.config.js
+Add the paths to all of your template files in your tailwind.config.js file.
+ ```
 module.exports = {
-  style: {
-    postcss: {
-      plugins: [
-        require('tailwindcss'),
-        require('autoprefixer'),
-      ],
-    },
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {},
   },
+  plugins: [],
 }
 ```
+### Add the Tailwind directives to your CSS
 
-### Create your configuration file,This will create a minimal tailwind.config.js file at the root folder:
-
-
-```
-npx tailwindcss-cli@latest init
-```
-
- ### Include Tailwind in your CSS
-  
-Open the ./src/index.css file that Create React App generates for you by default and use the @tailwind directive to include Tailwind’s base, components, and utilities styles, replacing the original file contents:
-```
-/* ./src/index.css */
+Add the @tailwind directives for each of Tailwind’s layers to your ./src/index.css file.
+ ```
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 ```
-### Finally, ensure your CSS file is being imported in your ./src/index.js file:
 
-``` // src/index.js
-  import React from 'react';
-  import ReactDOM from 'react-dom';
- >>> import './index.css'; <<<
-  import App from './App';
-  import reportWebVitals from './reportWebVitals';
+### Start using Tailwind in your project
 
-  ReactDOM.render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>,
-    document.getElementById('root')
-  );
+Start using Tailwind’s utility classes to style your content.
 
-  // ...
-
+ ```
+export default function App() {
+  return (
+    <h1 className="text-3xl font-bold underline">
+      Hello world!
+    </h1>
+  )
+}
 ```
-
 
 
 **You’re finished!** Now when you run **_npm run start_**, Tailwind CSS will be  ready
 > to see the official documentation go to [tailwindcss.com](https://tailwindcss.com/docs/guides/create-react-app)
-
-
-
-# Creating the navigation in the SPA 🔧
-
-_In this tutorial we'll use React.Router ._
-
-### Open the bash or the command prompt in the root folder and run the next command that will install a new dependendcy in your proyect.
-
-```
-npm i react-router-dom --save
-```
- This copies the appropriate React Router files and registers it in our package.json. 
-
-###  Now open the App.js file and add the import for react-router
- 
- ```
-import { BrowserRouter as Router  } from "react-router-dom";
-```
-
-
-### Next, we can add our views as importations  like this:
-
-```
-//App.js
-import ViewX from "./views/ViewX.js";
-import ViewY from "./views/ViewY.js";
-```
-_this importations doesnt exist yet!_
-### And then you can add the components imported before and set the navigation route:
-
-```
-// App.js
-<Router>
-      <Route exact path="/" component={Home}/>
-      <Route path="/viewx" component={ViewX} />
-      <Route path="/viewy" component={ViewY} />
-
-</Router>
-```
-#### As you can see, the Route component contains a path prop. The value you specify for the path determines when this route is going to be active. When a route is active, the component specified by the component prop gets rendered.
-
-#### _The exact prop ensures the Route is active only if the path is an exact match for what is being loaded._
- 
-**By now**, we've covered a good chunk of the cool functionality React Router has for helping you build your SPA. 
-
-
-
-**You’re finished!** Now when you run **npm run start**, Tailwind CSS will be  ready
-> to see the official documentation go to [reactrouter.com](https://reactrouter.com/web/guides/quick-start)
-
- 
-
-## Run and deploy your SPA 🛠️
-
-> _At this point we have a basic react app ready to run and deploy_
-
-
-
-
-### Run localy 🔧
-
-_In the root folder run the next command:_
-
-```bash
-npm run start
-```
-
-### Run the production version 🔧
-```bash
-npm run build
-npm i serve
-serve -s build
-```
- ### You will see the next message and try in the browser
-
-```
-   ┌────────────────────────────────────────┐
-   │                                        │
-   │   Serving!                             │
-   │                                        │
-   │   Local:  http://localhost:5000        │
-   │                                        │
-   │   Copied local address to clipboard!   │
-   │                                        │
-   └────────────────────────────────────────┘
-```
 
 
 
