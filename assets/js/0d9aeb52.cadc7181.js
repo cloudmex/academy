@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcloudmex_academy=self.webpackChunkcloudmex_academy||[]).push([[67],{6295:function(a){a.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"wfd","name":"wfd","count":1,"permalink":"/blog/tags/wfd"}')}}]);

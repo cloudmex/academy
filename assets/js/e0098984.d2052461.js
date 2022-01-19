@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcloudmex_academy=self.webpackChunkcloudmex_academy||[]).push([[950],{5935:function(a){a.exports=JSON.parse('{"allTagsPath":"/blog/tags","slug":"bootcamp","name":"bootcamp","count":1,"permalink":"/blog/tags/bootcamp"}')}}]);
